@@ -58,7 +58,7 @@ object Dependencies extends AutoPlugin {
       "com.typesafe.akka"             %% "akka-persistence-cassandra-launcher" % "1.0.5"  % Test,
       "com.typesafe.akka"             %% "akka-testkit"                        % "2.6.19" % Test,
       "com.typesafe.akka"             %% "akka-multi-node-testkit"             % "2.6.19" % Test,
-      "com.lightbend.akka.management" %% "akka-management-cluster-bootstrap"   % "1.1.3"
+      "com.lightbend.akka.management" %% "akka-management-cluster-bootstrap"   % "1.1.4"
     )
   }
 }
