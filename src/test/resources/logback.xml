@@ -1,0 +1,44 @@
+<!--
+  ~ Copyright (c) 2021.
+  ~ OOON.ME ALL RIGHTS RESERVED.
+  ~ Licensed under the Mozilla Public License, version 2.0
+  ~ Please visit <http://ooon.me> or mail to zhaihao@ooon.me
+  -->
+
+<configuration>
+
+    <conversionRule conversionWord="coloredLevel" converterClass="log.logback.ColoredLevel"/>
+    <conversionRule conversionWord="coloredLogger" converterClass="log.logback.ColoredLogger"/>
+    <conversionRule conversionWord="coloredAkka" converterClass="log.logback.ColoredAkkaSource"/>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${application.home:-.}/logs/application.log</file>
+        <encoder>
+            <pattern>%date [%level] from %logger in %thread - %message%n%xException</pattern>
+        </encoder>
+    </appender>
+
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{MM/dd HH:mm:ss.SSS} %coloredLevel %message %coloredLogger{40}%coloredAkka %n%xException{10}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE"/>
+    </appender>
+
+    <appender name="ASYNC_STDOUT" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="STDOUT"/>
+    </appender>
+
+    <logger name="me.ooon" level="DEBUG"/>
+    <logger name="akka.remote" level="DEBUG"/>
+
+    <root level="DEBUG">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
