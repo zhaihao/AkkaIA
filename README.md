@@ -1,4 +1,4 @@
-# zk [![CI][ciImg]][ciLink] [![STEWARD][stewardImg]][stewardLink] [![License][licenseImg]][licenseLink]
+# akkaia [![CI][ciImg]][ciLink] [![STEWARD][stewardImg]][stewardLink] [![License][licenseImg]][licenseLink]
 
 scala akka in action
 
