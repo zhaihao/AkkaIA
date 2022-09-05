@@ -27,6 +27,6 @@ jobs:
           cache: 'sbt'
 
       - name: Run tests
-        run: sbt test
+        run: sbt "test; MultiJvm/test"
         env:
           GITHUB_TOKEN: ${{ secrets.CI }}

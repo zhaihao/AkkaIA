@@ -6,7 +6,7 @@
   -->
 
 <configuration>
-
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
     <conversionRule conversionWord="coloredLevel" converterClass="log.logback.ColoredLevel"/>
     <conversionRule conversionWord="coloredLogger" converterClass="log.logback.ColoredLogger"/>
     <conversionRule conversionWord="coloredAkka" converterClass="log.logback.ColoredAkkaSource"/>
@@ -14,7 +14,7 @@
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>${application.home:-.}/logs/application.log</file>
         <encoder>
-            <pattern>%date [%level] from %logger in %thread - %message%n%xException</pattern>
+            <pattern>%date{MM/dd HH:mm:ss.SSS} %level %message%n</pattern>
         </encoder>
     </appender>
 
@@ -37,7 +37,7 @@
     <logger name="akka.remote" level="DEBUG"/>
 
     <root level="DEBUG">
-        <appender-ref ref="FILE"/>
+<!--        <appender-ref ref="FILE"/>-->
         <appender-ref ref="STDOUT"/>
     </root>
 

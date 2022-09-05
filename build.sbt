@@ -1,8 +1,10 @@
-import com.typesafe.sbt.SbtMultiJvm.multiJvmSettings
-version          := "0.1.0-SNAPSHOT"
+version          := "0.1.0"
 scalaVersion     := "2.13.8"
 name             := "akkaia"
 organization     := "me.ooon"
+
+Global / excludeLintKeys := Set(idePackagePrefix)
+
 idePackagePrefix := Some("me.ooon.akkaia")
 
 enablePlugins(MultiJvmPlugin)
