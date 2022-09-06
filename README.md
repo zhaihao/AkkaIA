@@ -2,7 +2,7 @@
 
 scala akka in action
 
-[ciImg]: https://github.com/zhaihao/akkaia/actions/workflows/scala.yml/badge.svg
+[ciImg]: https://github.com/zhaihao/akkaia/actions/workflows/ci.yml/badge.svg
 [ciLink]: https://github.com/zhaihao/akkaia/actions
 
 [versionImg]: https://img.shields.io/github/v/tag/zhaihao/akkaia?label=version
