@@ -43,21 +43,21 @@ object Dependencies extends AutoPlugin {
     )
 
     lazy val AKKA = Seq(
-      "com.typesafe.akka"             %% "akka-actor"                          % "2.6.19",
-      "com.typesafe.akka"             %% "akka-slf4j"                          % "2.6.19",
-      "com.typesafe.akka"             %% "akka-remote"                         % "2.6.19",
+      "com.typesafe.akka"             %% "akka-actor"                          % "2.6.20",
+      "com.typesafe.akka"             %% "akka-slf4j"                          % "2.6.20",
+      "com.typesafe.akka"             %% "akka-remote"                         % "2.6.20",
       "com.typesafe.akka"             %% "akka-http"                           % "10.2.10",
-      "com.typesafe.akka"             %% "akka-cluster"                        % "2.6.19",
-      "com.typesafe.akka"             %% "akka-cluster-tools"                  % "2.6.19",
-      "com.typesafe.akka"             %% "akka-cluster-metrics"                % "2.6.19",
-      "com.typesafe.akka"             %% "akka-discovery"                      % "2.6.19",
-      "com.typesafe.akka"             %% "akka-cluster-sharding"               % "2.6.19",
-      "com.typesafe.akka"             %% "akka-persistence"                    % "2.6.19",
-      "com.typesafe.akka"             %% "akka-persistence-query"              % "2.6.19",
+      "com.typesafe.akka"             %% "akka-cluster"                        % "2.6.20",
+      "com.typesafe.akka"             %% "akka-cluster-tools"                  % "2.6.20",
+      "com.typesafe.akka"             %% "akka-cluster-metrics"                % "2.6.20",
+      "com.typesafe.akka"             %% "akka-discovery"                      % "2.6.20",
+      "com.typesafe.akka"             %% "akka-cluster-sharding"               % "2.6.20",
+      "com.typesafe.akka"             %% "akka-persistence"                    % "2.6.20",
+      "com.typesafe.akka"             %% "akka-persistence-query"              % "2.6.20",
       "com.typesafe.akka"             %% "akka-persistence-cassandra"          % "1.0.6",
       "com.typesafe.akka"             %% "akka-persistence-cassandra-launcher" % "1.0.6"  % Test,
-      "com.typesafe.akka"             %% "akka-testkit"                        % "2.6.19" % Test,
-      "com.typesafe.akka"             %% "akka-multi-node-testkit"             % "2.6.19" % Test,
+      "com.typesafe.akka"             %% "akka-testkit"                        % "2.6.20" % Test,
+      "com.typesafe.akka"             %% "akka-multi-node-testkit"             % "2.6.20" % Test,
       "com.lightbend.akka.management" %% "akka-management-cluster-bootstrap"   % "1.1.4"
     )
   }
