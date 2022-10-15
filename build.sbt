@@ -1,5 +1,5 @@
 version          := "0.1.0"
-scalaVersion     := "2.13.9"
+scalaVersion     := "2.13.10"
 name             := "akkaia"
 organization     := "me.ooon"
 
