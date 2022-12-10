@@ -21,7 +21,7 @@ object Dependencies extends AutoPlugin {
 
     lazy val ORISON          = "me.ooon"                %% "orison"                     % "1.0.2"
     lazy val NSCALA          = "com.github.nscala-time" %% "nscala-time"                % "2.32.0"
-    lazy val OS_LIB          = "com.lihaoyi"            %% "os-lib"                     % "0.8.1"
+    lazy val OS_LIB          = "com.lihaoyi"            %% "os-lib"                     % "0.9.0"
     lazy val SQUANTS         = "org.typelevel"          %% "squants"                    % "1.7.4"
     lazy val TYPESAFE_CONFIG = "com.typesafe"            % "config"                     % "1.4.2"
     lazy val PLAY_JSON       = "com.typesafe.play"      %% "play-json"                  % "2.9.3"
